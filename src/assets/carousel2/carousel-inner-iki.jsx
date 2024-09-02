@@ -5,17 +5,19 @@ import {
   CarouselControl,
   CarouselIndicators,
 } from 'reactstrap';
-import './carousel-inner.css'; // Stil dosyanızı içe aktarın
+import './carousel-inner-iki.css';
 
 const items = [
   {
-    src: '/public/kapaks.jpeg',
+    src: '/public/shop-hero-2.jpg',
+    overlaySrc: '/public/shop-hero-2-pp.png', // Üst resmin yolu
     caption: [
       "SUMMER 2024",
-      "NEW COLLECTION",
-      "We know how large objects will act, but things on a small scale.",
+      "Vita Classic Product",
+      "We know how large objects will act, but things We know how large objects will act, We know how are objects will act, We know a small scale.",
+      "$16.48",
     ],
-    buttonText: "SHOP NOW",
+    buttonText: "ADD TO CART",
     key: 1,
   },
   // Diğer slide'lar eklenebilir
@@ -32,7 +34,7 @@ function CustomCaption({ caption, buttonText }) {
   );
 }
 
-function Example(args) {
+function Examples(args) {
   const [activeIndex, setActiveIndex] = useState(0);
   const [animating, setAnimating] = useState(false);
 
@@ -60,11 +62,14 @@ function Example(args) {
         onExited={() => setAnimating(false)}
         key={item.key}
       >
-        <img src={item.src} alt={item.altText} />
-        <CustomCaption
-          caption={item.caption}
-          buttonText={item.buttonText}
-        />
+        <div className="carousel-item">
+          <img src={item.src} alt="Background" className="bg-image" />
+          <img src={item.overlaySrc} alt="Overlay" className="overlay-image" />
+          <CustomCaption
+            caption={item.caption}
+            buttonText={item.buttonText}
+          />
+        </div>
       </CarouselItem>
     );
   });
@@ -96,4 +101,4 @@ function Example(args) {
   );
 }
 
-export default Example;
+export default Examples;
