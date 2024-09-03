@@ -4,14 +4,14 @@ import "./Cart.css"
 import Cart from './cart.jsx';
 function ProductPage() {
   const products = [
-    { image: './public/cart-1.png', title: 'Graphic Design', subtitle: 'English Department', price: '$6.48' },
-    { image: './public/cart-2.png', title: 'Graphic Design', subtitle: 'English Department', price: '$6.48' },
-    { image: './public/cart-3.png', title: 'Graphic Design', subtitle: 'English Department', price: '$6.48' },
-    { image: './public/cart-4.png', title: 'Graphic Design', subtitle: 'English Department', price: '$6.48' },
-    { image: './public/cart-5.png', title: 'Graphic Design', subtitle: 'English Department', price: '$6.48' },
-    { image: './public/cart-6.png', title: 'Graphic Design', subtitle: 'English Department', price: '$6.48' },
-    { image: './public/cart-7.png', title: 'Graphic Design', subtitle: 'English Department', price: '$6.48' },
-    { image: './public/cart-8.png', title: 'Graphic Design', subtitle: 'English Department', price: '$6.48' },
+    { image: '/cart-1.png', title: 'Graphic Design', subtitle: 'English Department', price: '$6.48' },
+    { image: 'cart-2.png', title: 'Graphic Design', subtitle: 'English Department', price: '$6.48' },
+    { image: '/cart-3.png', title: 'Graphic Design', subtitle: 'English Department', price: '$6.48' },
+    { image: '/cart-4.png', title: 'Graphic Design', subtitle: 'English Department', price: '$6.48' },
+    { image: '/cart-5.png', title: 'Graphic Design', subtitle: 'English Department', price: '$6.48' },
+    { image: '/cart-6.png', title: 'Graphic Design', subtitle: 'English Department', price: '$6.48' },
+    { image: '/cart-7.png', title: 'Graphic Design', subtitle: 'English Department', price: '$6.48' },
+    { image: '/cart-8.png', title: 'Graphic Design', subtitle: 'English Department', price: '$6.48' },
   ];
 
 

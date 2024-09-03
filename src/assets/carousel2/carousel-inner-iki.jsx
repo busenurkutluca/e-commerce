@@ -9,8 +9,8 @@ import './carousel-inner-iki.css';
 
 const items = [
   {
-    src: '/public/shop-hero-2.jpg',
-    overlaySrc: '/public/shop-hero-2-pp.png', // Üst resmin yolu
+    src: '/shop-hero-2.jpg',
+    overlaySrc: '/shop-hero-2-pp.png', // Üst resmin yolu
     caption: [
       "SUMMER 2024",
       "Vita Classic Product",

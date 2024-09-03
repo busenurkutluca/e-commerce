@@ -16,6 +16,7 @@ import Fluids from './assets/container-fluid/container-fluids';
 import Cart from './assets/desktop-product-carts/cart';
 import ProductCard from './assets/desktop-product-carts/ProductCard';
 import ProductPage from './assets/desktop-product-carts/ProductPage';
+import BlogCard from './assets/desktop-blog-3/BlogCard';
 
 function App () {
     return (
@@ -27,6 +28,7 @@ function App () {
       <ProductCard/>
       <ProductPage/>
    <Fluids/>
+   <BlogCard/>
         <Router>
             <Navbar/>
             <Routes>

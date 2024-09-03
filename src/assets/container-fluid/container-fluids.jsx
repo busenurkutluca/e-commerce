@@ -8,8 +8,8 @@ import {
 import "./container-fluids.css"
 const items = [
     {
-      src: '/public/asianwoman.png',
-      overlaySrc: '/public/shop-hero-2.jpg', // Üst resmin yolu
+      src: '/asianwoman.png',
+      overlaySrc: '/shop-hero-2.jpg', // Üst resmin yolu
       caption: [
         "SUMMER 2024",
         "Part of the Neural Unıverse",      

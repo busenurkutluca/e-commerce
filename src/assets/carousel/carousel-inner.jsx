@@ -9,7 +9,7 @@ import './carousel-inner.css';
 
 const items = [
   {
-    src: '/public/kapaks.jpeg',
+    src: '/kapaks.jpeg',
     caption: [
       "SUMMER 2024",
       "NEW COLLECTION",
