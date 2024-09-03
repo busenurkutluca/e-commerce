@@ -12,6 +12,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import İkon from './assets/navbar/navbar-light'; // navbar-light.jsx dosyasından Element bileşenini import edin
 import Example from './assets/carousel/carousel-inner';
 import Examples from './assets/carousel2/carousel-inner-iki';
+import Fluids from './assets/container-fluid/container-fluids';
+import Cart from './assets/desktop-product-carts/cart';
+import ProductCard from './assets/desktop-product-carts/ProductCard';
+import ProductPage from './assets/desktop-product-carts/ProductPage';
 
 function App () {
     return (
@@ -19,6 +23,10 @@ function App () {
       <FontAwesomeIcon/>
       <Example/>
       <Examples/>
+      <Cart/>
+      <ProductCard/>
+      <ProductPage/>
+   <Fluids/>
         <Router>
             <Navbar/>
             <Routes>

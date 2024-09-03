@@ -1,0 +1,23 @@
+/* ProductPage.css */
+
+.product-page {
+    margin: 0 auto;
+    max-width: 1200px; /* Max genişlik */
+  }
+  
+  .product-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .product-card {
+    flex: 1;
+    margin: 0 10px; /* Aralığı ayarlayın */
+  }
+  
+  .product-card img {
+    width: 100%; /* Resmin genişliğini kapsayıcıya uyacak şekilde ayarlayın */
+    height: auto; /* Yüksekliği oranlı olarak ayarlayın */
+  }
+  

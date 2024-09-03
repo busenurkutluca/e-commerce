@@ -5,34 +5,38 @@ import {
   CarouselControl,
   CarouselIndicators,
 } from 'reactstrap';
-import './carousel-inner.css';
-
+import "./container-fluids.css"
 const items = [
-  {
-    src: '/public/kapaks.jpeg',
-    caption: [
-      "SUMMER 2024",
-      "NEW COLLECTION",
-      "We know how large objects will act, but things on a small scale.",
-    ],
-    buttonText: "SHOP NOW",
-    key: 1,
-  },
-  // Diğer slide'lar eklenebilir
-];
+    {
+      src: '/public/asianwoman.png',
+      overlaySrc: '/public/shop-hero-2.jpg', // Üst resmin yolu
+      caption: [
+        "SUMMER 2024",
+        "Part of the Neural Unıverse",      
+        "We know how large objects will act, but things We know how large objects will act, We know how are objects will act, We know a small scale.",
+        
+      ],
+      buttonText: "BUY NOW",
+      key: 1,
+    },
+    // Diğer slide'lar eklenebilir
+  ];
+  
+  export function CustomCaption({ caption, buttonText }) {
+    return (
+      <div className="custom-caption">
+        <h2>{caption[0]}</h2>
+        <h3>{caption[1]}</h3>
+        <p>{caption[2]}</p>
+        <div className="button-group">
+          {buttonText && <button className="shop-button">{buttonText}</button>}
+          <button className="read-more-button">READ MORE</button>
+        </div>
+      </div>
+    );
+  }
 
-  function CustomCaption ({ caption, buttonText }) {
-  return (
-    <div className="custom-caption">
-      <h2>{caption[0]}</h2>
-      <h3>{caption[1]}</h3>
-      <p>{caption[2]}</p>
-      {buttonText && <button className="shop-button">{buttonText}</button>}
-    </div>
-  );
-}
-
-  function Example(args) {
+export function Fluids(args) {
   const [activeIndex, setActiveIndex] = useState(0);
   const [animating, setAnimating] = useState(false);
 
@@ -60,11 +64,14 @@ const items = [
         onExited={() => setAnimating(false)}
         key={item.key}
       >
-        <img src={item.src} alt={item.altText} />
-        <CustomCaption
-          caption={item.caption}
-          buttonText={item.buttonText}
-        />
+        <div className="carousel-item">
+          <img src={item.src} alt="Background" className="bg-image" />
+          <img src={item.overlaySrc} alt="Overlay" className="overlay-image" />
+          <CustomCaption
+            caption={item.caption}
+            buttonText={item.buttonText}
+          />
+        </div>
       </CarouselItem>
     );
   });
@@ -96,4 +103,4 @@ const items = [
   );
 }
 
-export default Example 
+export default Fluids

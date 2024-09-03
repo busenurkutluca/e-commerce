@@ -1,41 +1,61 @@
 .carousel-item {
-    position: relative;
-  }
-  
-  .carousel-item img {
-    width: 100%; /* Resmin genişliğini kapsama */
-    height: auto; /* Yüksekliği orantılı tutma */
-  }
-  
-  .custom-caption {
-    position: absolute;
-    top: 20px; /* Üstten 20px uzaklıkta */
-    left: 20px; /* Soldan 20px uzaklıkta */
-    color: #fff; /* Yazı rengi */
-    text-align: left; /* Metni sola hizala */
-    background: rgba(0, 0, 0, 0.5); /* Şeffaf arka plan */
-    padding: 20px; /* İç boşluk */
-    border-radius: 10px; /* Köşe yuvarlama */
-    max-width: 80%; /* Maksimum genişlik */
-  }
-  
-  .custom-caption h2, .custom-caption h3, .custom-caption p {
-    margin: 10px 0; /* Paragraflar arasında boşluk */
-  }
-  
-  .shop-button {
-    display: inline-block;
-    padding: 10px 20px; /* Buton içi boşluk */
-    margin-top: 10px; /* Üstten boşluk */
-    color: #fff; /* Buton yazı rengi */
-    background-color: #007bff; /* Buton arka plan rengi */
-    border: none; /* Buton kenar çizgisi */
-    border-radius: 5px; /* Köşe yuvarlama */
-    cursor: pointer; /* İmleç işareti */
-    text-transform: uppercase; /* Yazıyı büyük harf yapma */
-    font-weight: bold; /* Yazı kalınlığı */
-  }
-  
-  .shop-button:hover {
-    background-color: #0056b3; /* Hover etkisi */
-  }
+  position: relative;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #00aaff; /* Arka plan rengini istediğin mavi tona ayarla */
+  overflow: hidden;
+}
+
+.carousel-item img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  max-height: 100%;
+  object-fit: contain; /* Resmin ölçeklenmesini sağla */
+  z-index: 1;
+}
+
+.custom-caption {
+  position: relative;
+  z-index: 2;
+  text-align: left;
+  color: #ffffff;
+  max-width: 400px;
+  padding-left: 20px; /* Yazının sağa hizalanmasını sağla */
+}
+
+.custom-caption h2 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+.custom-caption h3 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.custom-caption p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.shop-button {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.shop-button:hover {
+  background-color: #218838;
+}
