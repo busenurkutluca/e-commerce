@@ -17,22 +17,14 @@ import Cart from './assets/desktop-product-carts/cart';
 import ProductCard from './assets/desktop-product-carts/ProductCard';
 import ProductPage from './assets/desktop-product-carts/ProductPage';
 import BlogCard from './assets/desktop-blog-3/BlogCard';
+import Footer from './assets/Footers/footer';
 
-function App () {
+function App() {
     return (
-      <>
-      <FontAwesomeIcon/>
-      <Example/>
-      <Examples/>
-      <Cart/>
-      <ProductCard/>
-      <ProductPage/>
-   <Fluids/>
-   <BlogCard/>
+<>
         <Router>
-            <Navbar/>
             <Routes>
-            <Route path="/" element={<İkon />} />
+                <Route path="/" element={<İkon />} />
                 <Route path="/" element={<Home />} />
                 <Route path="/shop" element={<Shop />} />
                 <Route path="/about" element={<About />} />
@@ -40,12 +32,20 @@ function App () {
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/pages" element={<Pages />} />
             </Routes>
-            
+            <Navbar />
+
+            <Example />
+            <Examples />
+            <Cart />
+            <ProductCard />
+            <ProductPage />
+            <Fluids />
+            <BlogCard />
+            <Footer />
+            <FontAwesomeIcon/>
         </Router>
         </>
     );
 }
 
-
-
-export default App
+export default App;

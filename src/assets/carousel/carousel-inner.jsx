@@ -7,6 +7,7 @@ import {
 } from 'reactstrap';
 import './carousel-inner.css';
 
+
 const items = [
   {
     src: '/kapaks.jpeg',
@@ -66,6 +67,8 @@ const items = [
           buttonText={item.buttonText}
         />
       </CarouselItem>
+     
+
     );
   });
 
@@ -93,6 +96,8 @@ const items = [
         onClickHandler={next}
       />
     </Carousel>
+
+  
   );
 }
 
